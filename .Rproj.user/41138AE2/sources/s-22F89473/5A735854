@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510650358058.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5A735854",
+    "lastKnownWriteTime" : 1510650364,
+    "last_content_update" : 1510650364012,
+    "path" : "C:/Users/sky_x/Desktop/sentimentAnalysis/R/twitterAPI.R",
+    "project_path" : "R/twitterAPI.R",
+    "properties" : {
+        "cursorPosition" : "16,33",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

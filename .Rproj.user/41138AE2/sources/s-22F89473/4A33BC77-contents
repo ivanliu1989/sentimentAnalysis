@@ -1,0 +1,2 @@
+library(sentimentAnalysis)
+sentimentAnalysis::setupTwitterConn()

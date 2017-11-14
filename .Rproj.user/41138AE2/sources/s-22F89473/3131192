@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510650721352.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3131192",
+    "lastKnownWriteTime" : 1510650780,
+    "last_content_update" : 1510650780189,
+    "path" : "C:/Users/sky_x/Desktop/sentimentAnalysis/R/zzz.R",
+    "project_path" : "R/zzz.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510650312741.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "707B6420",
+    "lastKnownWriteTime" : 1510650334,
+    "last_content_update" : 1510650334370,
+    "path" : "C:/Users/sky_x/Desktop/sentimentAnalysis/R/init.R",
+    "project_path" : "R/init.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

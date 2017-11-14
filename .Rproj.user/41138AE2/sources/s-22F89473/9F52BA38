@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510650387741.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9F52BA38",
+    "lastKnownWriteTime" : 1510650397,
+    "last_content_update" : 1510650398007,
+    "path" : "C:/Users/sky_x/Desktop/sentimentAnalysis/R/twitterTextMining.R",
+    "project_path" : "R/twitterTextMining.R",
+    "properties" : {
+        "cursorPosition" : "317,0",
+        "scrollLine" : "284",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
