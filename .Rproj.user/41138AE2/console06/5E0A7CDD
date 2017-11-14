@@ -91,4 +91,137 @@ The file will have its original line endings in your working directory.[0K
 [0K[?25h[?25l
 [0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
 $ gi[0K[?25ht[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25ha[0Km[0K[18G[?25l$ git commit -am "[0K[?25hi[0Kn[0Ki[0Kt[0K"[0K[?25l
+[0K[?25h[master (root-commit) a2c3feb] init[0K[?25l
+ 56 files changed, 1598 insertions(+)[0K
+ create mode 100644 .Rbuildignore[0K
+ create mode 100644 .Rhistory[0K
+ create mode 100644 .Rproj.user/41138AE2/console06/5E0A7CDD[0K
+ create mode 100644 .Rproj.user/41138AE2/console06/INDEX001[0K
+ create mode 100644 .Rproj.user/41138AE2/cpp-definition-cache[0K
+ create mode 100644 .Rproj.user/41138AE2/pcs/debug-breakpoints.pper[0K
+ create mode 100644 .Rproj.user/41138AE2/pcs/files-pane.pper[0K
+ create mode 100644 .Rproj.user/41138AE2/pcs/source-pane.pper[0K
+ create mode 100644 .Rproj.user/41138AE2/pcs/windowlayoutstate.pper[0K
+ create mode 100644 .Rproj.user/41138AE2/pcs/workbench-pane.pper[0K
+ create mode 100644 .Rproj.user/41138AE2/persistent-state[0K
+ create mode 100644 .Rproj.user/41138AE2/rmd-outputs[0K
+ create mode 100644 .Rproj.user/41138AE2/saved_source_markers[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/258431EA[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/30F17019[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/56C41AE[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/64F29F39[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/83530ACB[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/89AD7853[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/9C7C548E[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/F7AC9F8[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/prop/INDEX[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/3131192[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/3131192-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/4A33BC77[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/4A33BC77-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/5A735854[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/5A735854-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/6BB373FD-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/707B6420[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/707B6420-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/77315A4C-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/99A8EF80-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/9F52BA38[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/9F52BA38-contents[0K
+ create mode 100644 .Rproj.user/41138AE2/sources/s-22F89473/lock_file[0K
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names[0K
+ create mode 100644 .Rproj.user/shared/notebooks/paths[0K
+ create mode 100644 .gitignore[0K
+ create mode 100644 DESCRIPTION[0K
+ create mode 100644 NAMESPACE[0K
+ create mode 100644 R/init.R[0K
+ create mode 100644 R/twitterAPI.R[0K
+ create mode 100644 R/twitterTextMining.R[0K
+ create mode 100644 R/zzz.R[0K
+ create mode 100644 demo/demo.R[0K
+ create mode 100644 man/hello.Rd[0K
+ create mode 100644 man/setupTwitterConn.Rd[0K
+ create mode 100644 man/tweet_corpus.Rd[0K
+ create mode 100644 man/tweet_corpus_chunck.Rd[0K
+ create mode 100644 man/tweet_text.Rd[0K
+ create mode 100644 man/twitterAnomalyDetect.Rd[0K
+ create mode 100644 man/twitterClusterGraph.Rd[0K
+ create mode 100644 man/twitterEmotionalValence.Rd[0K
+ create mode 100644 man/twitterExtracter.Rd[0K
+ create mode 100644 sentimentAnalysis.Rproj[0K
+[0K[?25h[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+$ gi[0K[?25ht[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git push origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
+[0K[?25hCounting objects: 60, done.[0K[?25l
+[0K[?25hDelta compression using up to 4 threads.[0K[?25l
+Compressing objects:  82% (41/50)[0K[1G[?25hCompressing objects: 100% (50/50), done.[0K[?25l
+Writing objects: 100% (60/60), 15.43 KiB | 0 bytes/s, done.[0K
+Total 60 (delta 7), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas: 100% (7/7), done.[0K[?25l
+[0K[?25hTo https://github.com/ivanliu1989/sentimentAnalysis.git[0K[?25l
+ * [new branch]      master -> master[0K
+[0K[?25h[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ git push origin master[0K[?25h[24G[23G[22G[21G[20G[19G[18G[17G[16G[15G[14G[13G[12G[?25l$ git push -origin master[0K[13G[?25h[?25l$ git push -uorigin master[0K[14G[?25h[?25l$ git push -u origin master[0K[15G[?25h[?25l
+[0K[?25hEverything up-to-date[0K[?25l
+Branch master set up to track remote branch master from origin.[0K
+[0K[?25h[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+]0;:/c/Users/sky_x/Desktop/sentimentAnalysis[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/41138AE2/cpp-definition-cache.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/pcs/debug-breakpoints.pper.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/pcs/files-pane.pper.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/pcs/source-pane.pper.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/pcs/windowlayoutstate.pper.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/pcs/workbench-pane.pper.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/persistent-state.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/rmd-outputs.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/prop/30F17019.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/prop/89AD7853.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/prop/9C7C548E.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/prop/INDEX.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/4A33BC77.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/4A33BC77-c[0Ko
+ntents.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/5A735854.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/5A735854-c[0Ko
+ntents.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/9F52BA38.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/41138AE2/sources/s-22F89473/9F52BA38-c[0Ko
+ntents.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/shared/notebooks/paths.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32msky_x@DESKTOP-OET6BHM [0;35m [0;33m~/Desktop/sentimentAnalysis[0;36m (master)[0m[0K
+$ git[0K[?25h[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25ha[0Km[0K[18G[?25l$ git commit -am "[0K[?25ha[0Kd[0Kd[0K[23G[24G[?25l$ git commit -am "add  =[0K[?25h[?25l$ git commit -am "add[0K[24G[?25h[23G[22G[?25l$ git commit -am "addi[0K[?25hn[0Kg[0K[26G[?25l$ git commit -am "adding f[0K[?25hu[0Kn[0Kc[0Kt[0Ki[0Ko[0Kn[0K"[0K[?25l
 [0K[?25h

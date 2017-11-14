@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "9F52BA38",
-    "lastKnownWriteTime" : 1510650397,
-    "last_content_update" : 1510650398007,
+    "lastKnownWriteTime" : 1510651825,
+    "last_content_update" : 1510651825688,
     "path" : "C:/Users/sky_x/Desktop/sentimentAnalysis/R/twitterTextMining.R",
     "project_path" : "R/twitterTextMining.R",
     "properties" : {
-        "cursorPosition" : "317,0",
-        "scrollLine" : "284",
+        "cursorPosition" : "310,54",
+        "scrollLine" : "289",
         "tempName" : "Untitled1"
     },
     "relative_order" : 3,

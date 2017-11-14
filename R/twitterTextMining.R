@@ -32,7 +32,7 @@ twitterAnomalyDetect <- function(tweets, lastDay = Sys.Date(), title = "AUD/USD"
     geom_density(aes(fill = isRetweet), alpha = alpha) +
     scale_fill_discrete(guide = 'none') +
     xlab('All tweets') + ggtitle(paste0(title, " tweets distribution over all periods")) +
-    theme_anzquant(simple_theme = TRUE, anz_colours = TRUE, anz_font = TRUE, logo = "anz", font_size = fontsize, inv = 2)
+    theme_anzquant(simple_theme = TRUE, anz_colours = TRUE, anz_font = TRUE, logo = "none", font_size = fontsize, inv = 2)
 
   # Zoom in on last day
   dayOf = d[as.Date(d$created) >= lastDay-1,]
@@ -40,7 +40,7 @@ twitterAnomalyDetect <- function(tweets, lastDay = Sys.Date(), title = "AUD/USD"
     geom_density(aes(fill = isRetweet), adjust = .25, alpha = alpha) +
     theme(legend.justification = c(1, 1), legend.position = c(1, 1)) +
     xlab('Day-of tweets') + ggtitle(paste0(title, " tweets distribution within last day")) +
-    theme_anzquant(simple_theme = TRUE, anz_colours = TRUE, anz_font = TRUE, logo = "anz", font_size = fontsize, inv = 2)
+    theme_anzquant(simple_theme = TRUE, anz_colours = TRUE, anz_font = TRUE, logo = "none", font_size = fontsize, inv = 2)
 
   tweetsDistribution <- cowplot::plot_grid(timeDist, timeDistDayOf, rows = 2)
   tweetsDistribution
@@ -54,7 +54,7 @@ twitterAnomalyDetect <- function(tweets, lastDay = Sys.Date(), title = "AUD/USD"
   anomalies <- AnomalyDetectionTs(x, max_anoms=0.1, direction='both', plot=TRUE,
                                   title = paste0(title, " Tweets Anomalies Detection"))
   anomalies$plot <- anomalies$plot +
-    theme_anzquant(simple_theme = F, anz_colours = TRUE, anz_font = TRUE, logo = "anz", font_size = fontsize, opacity = 0.05, inv = 3)
+    theme_anzquant(simple_theme = F, anz_colours = TRUE, anz_font = TRUE, logo = "none", font_size = fontsize, opacity = 0.05, inv = 3)
 
 
   return(list(timeDist = timeDist,
@@ -136,7 +136,7 @@ twitterEmotionalValence <- function(tweets, title = "AUD/USD", dir = "~/analytic
     ggplot(aes(created, emotionalValence)) +
     geom_point() +
     geom_smooth(span = .5) + ggtitle(paste0(title, " - Daily Emotional Valence of Tweets \n", max(as.Date(orig$created)))) +
-    theme_anzquant(simple_theme = T, anz_colours = TRUE, anz_font = TRUE, logo = "anz", font_size = fontsize)
+    theme_anzquant(simple_theme = T, anz_colours = TRUE, anz_font = TRUE, logo = "none", font_size = fontsize)
 
   orig[as.Date(created) == max(as.Date(created)) & emotionalValence != 0,
        color := mean(emotionalValence), by = hour(as.ITime(created))]
@@ -145,20 +145,20 @@ twitterEmotionalValence <- function(tweets, title = "AUD/USD", dir = "~/analytic
     scale_fill_gradient(name = "Mean Emotion") +
     geom_boxplot() + labs(x = "Hour") + geom_jitter(size = 0.8, shape = 8) +
     ggtitle(paste0(title, " - Daily Emotional Valence of Tweets \n", max(as.Date(orig$created)))) +
-    theme_anzquant(simple_theme = T, anz_colours = FALSE, anz_font = TRUE, logo = "anz", font_size = fontsize)
+    theme_anzquant(simple_theme = T, anz_colours = FALSE, anz_font = TRUE, logo = "none", font_size = fontsize)
 
   emotionPlot <- orig %>%
     ggplot(aes(created, emotionalValence)) +
     geom_point() +
     geom_smooth(span = .5) + ggtitle(paste0(title, " - Weekly Emotional Valence of Tweets \n", min(as.Date(orig$created)), " to ", max(as.Date(orig$created)))) +
-    theme_anzquant(simple_theme = T, anz_colours = TRUE, anz_font = TRUE, logo = "anz", font_size = fontsize)
+    theme_anzquant(simple_theme = T, anz_colours = TRUE, anz_font = TRUE, logo = "none", font_size = fontsize)
 
   orig[emotionalValence != 0, color := mean(emotionalValence), by = as.Date(created)]
   emotionPlotViolin <- ggplot(orig[emotionalValence != 0,], aes(factor(as.Date(created)), emotionalValence, fill = color)) +
     scale_fill_gradient(name = "Mean Emotion") +
     geom_violin() + labs(x = "Date") + geom_jitter(size = 0.8, shape = 8) +
     ggtitle(paste0(title, " - Weekly Emotional Valence of Tweets \n", min(as.Date(orig$created)), " to ", max(as.Date(orig$created)))) +
-    theme_anzquant(simple_theme = T, anz_colours = FALSE, anz_font = TRUE, logo = "anz", font_size = fontsize)
+    theme_anzquant(simple_theme = T, anz_colours = FALSE, anz_font = TRUE, logo = "none", font_size = fontsize)
   orig[,color := NULL]
 
   # Emotional content -------------------------------------------------------
